@@ -39,6 +39,10 @@ h1,h2,h3,h4.h5,h6,p {
 ::after {
     box-sizing: border-box;
 }
+
+.hide {
+    display: none;
+}
             
             /* header page */
             
@@ -155,6 +159,22 @@ h1,h2,h3,h4.h5,h6,p {
             
 .nav-item {
     margin-right: 0;
+}
+
+.icon-menu-stics {
+    margin-right: 0;
+    padding: auto;
+}
+
+.stics-button {
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+
+.stics-button:hover {
+    background: none;
 }
             
             /* hero section */
@@ -909,4 +929,87 @@ input[type="checkbox"]:checked + .agreement-title > .checkbox-form {
 
 .checkbox {
     position: relative;
+}
+
+
+            /* responsive and adapt design */
+
+
+            /* mobile design */
+@media only screen and (max-width: 320px) {
+.container  {
+    max-width: 288px;
+    margin: 0 auto;
+    padding: 0 16px;     
+}
+.bs-logo-container {
+    display: none;
+}
+.bs-item {
+    width: 288px;
+    height: 120px;
+}
+.bs-list {
+    flex-direction: column;
+    gap: 72px;
+}
+.strategy-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-align: center;
+}
+.nav-list,
+.contacts {
+    display: none;
+}
+.header-logo {
+    padding: 16px 0;
+}
+.stics-button {
+    right: 0;
+}
+}
+
+            /* tablet design */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+.container  {
+    max-width: 736px;
+    margin: 0 auto;
+    padding: 0 16px; 
+}
+.bs-logo-container {
+    display: none;
+}
+.bs-item {
+    max-width: 356px;
+    height: 120px;
+    flex: calc( (100% - 20px) / 2);
+}
+.bs-list {
+    flex-wrap: wrap;
+}
+.strategy-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+.stics-button {
+    display: none;
+}
+}
+
+           /* desctop design */
+
+@media (min-width: 1140px) {
+  .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px; 
+  }
+  .stics-button {
+    display: none;
+}
 }
