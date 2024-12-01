@@ -46,6 +46,7 @@ h1,h2,h3,h4.h5,h6,p {
 
 button {
     cursor: pointer;
+    border-style: none;
 }
 
 ::after {
@@ -87,7 +88,7 @@ button {
     display: flex;
     align-items: center;
     max-width: 320px;
-    margin: 0 auto;
+    margin: 0;
     justify-content: space-between;
 }
 
@@ -136,6 +137,7 @@ button {
 .stics-button {
     border: none;
     background-color: transparent;
+    padding: 0;
 }
 
 .stics-button:hover {
@@ -143,6 +145,7 @@ button {
 }
 
 .mobile-menu {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -152,7 +155,7 @@ button {
     background-color: #FFFFFF;
     opacity: 0;
     pointer-events: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(0);
 }
 
 .mobile-menu.is-open {
@@ -161,12 +164,15 @@ button {
 }
 
 .mobile-menu-container {
-    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px;
+    margin: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-mobile {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     gap: 40px;
     margin-top: 72px;
@@ -209,11 +215,9 @@ button {
     position: relative;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -238,15 +242,14 @@ button {
 .contacts-list-mobile {
     flex-direction: column;
     gap: 24px;
-    /* margin-top: 168px; */
 }
 
 .contacts-link-mobile {
-    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
+    font-style: normal;
 }
 
 .contacts-link-mobile.active {
@@ -255,6 +258,10 @@ button {
 
 .contacts-item-mobile {
     margin-bottom: 24px;
+}
+
+.contacts-item-mobile:last-child {
+    margin-bottom: 0;
 }
 
 .social-media-title-mobile {
@@ -269,7 +276,10 @@ button {
 .social-media-list-mobile {
     display: flex;
     gap: 40px;
-    margin-top: 16px;
+}
+
+.social-media-container-mobile {
+    margin-top: 48px;
 }
 
 .social-media-logo-list-item-mobile {
@@ -293,9 +303,10 @@ button {
 }
 
 @media screen and (min-width: 767px) {
-    .header-container {
+    .header-container { 
         max-width: 767px;
     }
+
     .icon-menu-stics {
         display: none;
     }
@@ -308,31 +319,21 @@ button {
     .nav-list {
         display: flex;
         gap: 40px;
-}
+    }
+
     .contacts {
         display: block;
         flex-direction: column;
         gap: 12px;
         margin-left: 121px;
     }
+
     .nav-link {
         color: #2e2f42;
         padding-top: 24px;
         padding-bottom: 24px;
         display: block;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .nav-link.active::after {
-        content: '';
-        display: block;
-        border-radius: 2px;
-        width: 100%;
-        height: 4px;
-        background-color: #404bbf;
-        position: absolute;
-        left: 0;
-        bottom: -1px;
     }
     
     .active {
@@ -342,6 +343,19 @@ button {
     
     .nav-list:last-child {
         margin-right: 0;
+    }
+
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contacts-link-mobile {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
     }
                 
     .nav-link:hover,
@@ -353,13 +367,14 @@ button {
     }
                 
     .contacts {
+        /* flex-direction: column;
+        gap: 12px; */
         font-style: normal;
         margin-left: auto;
     }
                 
     .contacts-link {
-        font-weight: 500;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
@@ -368,26 +383,39 @@ button {
                 
     .nav-item {
         margin-right: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
+
+    .nav-link.active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #404bbf;
+      }
 
     .nav-header {
         display: flex;
     }
+
     .contacts-item {
         font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
     }
-    .mobile-menu {
-        opacity: 0;
-    }
 }
 
 @media screen and (min-width: 1158px) {
-    .header-page {
-        border-bottom: 1px solid #e7e9fc;
-        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
+
+    .container {
+        padding: 0 15px;
     }
                 
     .header-container {
@@ -412,7 +440,8 @@ button {
     }
                 
     .contacts-list {
-        display: flex;
+        flex-direction: row;
+        align-items: center;
         gap: 40px;
     }
 
@@ -440,6 +469,7 @@ button {
         left: 0;
         bottom: -1px;
     }
+
     .active {
         color: #404bbf;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -449,20 +479,16 @@ button {
         margin-right: 0;
     }
                 
-    .nav-link:hover,
-    .nav-link:focus,
-    .contacts-link:hover,
-    .contacts-link:focus {
-        color: #404bbf;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-                
     .contacts {
+        display: flex;
+        gap: 40px;
         font-style: normal;
         margin-left: auto;
     }
                 
     .contacts-link {
+        padding: 24px 0;
+        font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
@@ -471,6 +497,10 @@ button {
                 
     .nav-item {
         margin-right: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em; 
     }
     
     .icon-menu-stics {
@@ -492,6 +522,7 @@ button {
         letter-spacing: 0.02em;
 
     }
+
     .mobile-menu {
         opacity: 0;
         pointer-events: none;
