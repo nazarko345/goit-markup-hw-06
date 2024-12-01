@@ -391,7 +391,7 @@ button {
 
     .nav-link.active::after {
         content: '';
-        position: absolute;
+        position: relative;
         left: 0;
         bottom: -1px;
         width: 100%;
