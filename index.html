@@ -65,15 +65,15 @@
           </ul>
         </address>
 
-        <button type="button" class="stics-button">
+        <button type="button" data-menu-open class="stics-button">
           <svg class="icon-menu-stics" width="24" height="24">
             <use href="./images/icons.svg#icon-stics-icon"></use>
           </svg>
         </button>
 
-        <div class="mobile-menu is-open">
+        <div  data-menu class="mobile-menu is-open">
           <div class="mobile-menu-container container">
-            <button class="close-button" type="button">
+            <button class="close-button" data-menu-close type="button">
               <svg class="close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
               </svg>
@@ -616,5 +616,6 @@
       </div>
      </div> 
      <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
   </body>
 </html>

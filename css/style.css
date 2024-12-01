@@ -166,11 +166,10 @@ button {
 }
 
 .nav-list-mobile {
-    /* display: block; */
+    /* display: flex; */
     flex-direction: column;
     gap: 40px;
     margin-top: 72px;
-    /* margin-bottom: auto; */
 }
 
 .nav-menu-mobile {
@@ -228,6 +227,11 @@ button {
 }
 
 .nav-item-mobile {
+    display: flex;
+    margin-bottom: auto;
+}
+
+.nav-list-mobile {
     margin-bottom: auto;
 }
 
@@ -354,6 +358,8 @@ button {
     }
                 
     .contacts-link {
+        font-weight: 500;
+        font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
