@@ -206,7 +206,7 @@ button:focus {
     width: calc((100% - 72px) / 4);
 }
             
-.bs-section {
+.bs-container {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -228,19 +228,15 @@ button:focus {
     margin-bottom: 8px;
 }
 
-.team-logo-socials {
-    min-width: 64px;
-    min-height: 64px;
-}
-            
-            /* team section */
-            
+
+/* team section */
+
 .team-part {
     background-color: #F4F4FD;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-            
+
 .team-members {
     background-color: #FFFFFF;
     font-weight: 500;
@@ -257,11 +253,11 @@ button:focus {
     max-width: 264px;
     height: 428px;
 }
-            
+
 :for(:last-child) {
     margin-right: 0;
 }
-            
+
 .team-title {
     font-size: 36px;
     line-height: 1.11;
@@ -271,7 +267,12 @@ button:focus {
     color: #2e2f42;
     margin-bottom: 72px;
 }
-            
+
+.team-logo-socials {
+min-width: 64px;
+    min-height: 64px;
+}
+
 .team-paragraf {
     font-weight: 400;
     font-size: 16px;
