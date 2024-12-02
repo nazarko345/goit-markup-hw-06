@@ -314,7 +314,6 @@ min-width: 64px;
 
 .social-media-logo-ts {
     fill: #f4f4fd;
-
 }
 
 .social-media-logo-item {
@@ -458,7 +457,6 @@ min-width: 64px;
 .main-footer-container {
     display: flex;
     align-items: baseline;
-    
 }
             
 .paragraph-text {
@@ -471,10 +469,6 @@ min-width: 64px;
     margin-right: 120px;
     min-width: 264px;
 }            
-
-
-
-
 
 .social-media-link:hover,
 .social-media-link:focus {
