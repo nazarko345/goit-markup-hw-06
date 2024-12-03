@@ -1242,8 +1242,6 @@ button {
     .subscribe-container {
         display: block;
         align-items: start;
-        justify-content: start;
-        margin-left: 0;
     }
     
     .subscribe-title {
@@ -1265,16 +1263,19 @@ button {
 
     .footer-container {
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .social-media-container {
         margin-right: 80px;
+        margin-bottom: 0;
     }
 
     .main-footer-container {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        align-items: baseline;
     }
 
     .email-input {
