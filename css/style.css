@@ -155,7 +155,7 @@ button {
     background-color: #FFFFFF;
     opacity: 0;
     pointer-events: none;
-    transform: translateX(-50);
+    transform: translateX(50);
     transition: 200ms ease-in-out;
 }
 
@@ -541,7 +541,7 @@ button {
     min-width: 320px;
     background-image: 
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/background-hero-img.jpg);
+    url(../images/people-office\ 1-desc@1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -587,11 +587,10 @@ button {
         min-width: 768px;
         background-image: 
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(../images/background-hero-img.jpg);
+        url(../images/people-office\ 1-desc@1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        margin: 0 auto;
     }
                 
     .main-title {
@@ -637,13 +636,12 @@ button {
         padding-top: 188px;
         padding-bottom: 188px;
         /*max-width: 1440px;*/
-        background-image: 
+        background-image:  
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(../images/background-hero-img.jpg);
+        url(../images/people-office\ 1-desc@1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        margin: 0 auto;
     }
                 
     .main-title {
@@ -1216,8 +1214,9 @@ button {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* align-items: start; */
         gap: 0;
+        justify-content: flex-start;
+        padding-left: 108px;
     }
 
     .footer-logo {
