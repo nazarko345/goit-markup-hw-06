@@ -413,6 +413,10 @@ button {
         line-height: 1.17;
         letter-spacing: 0.04em;
     }
+
+    .mobile-menu {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -538,9 +542,10 @@ button {
 
 .hero-section {
     background-color: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    min-width: 320px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    max-width: 320px;
+    margin: 0 auto;
     background-image: 
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url(../images/people-office\ 1-desc@1.jpg);
@@ -557,10 +562,9 @@ button {
     letter-spacing: 0.02em;
     color: #fff; 
     max-width: 216px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
-    margin-top: 0;
+    margin: 0 auto;
+    padding-bottom: 72px;
+    /* padding: 72px 0; */
 }
 
 .button {
@@ -584,9 +588,9 @@ button {
 @media (min-width: 768px) and (max-width: 1157px) {
     .hero-section {
         background-color: #2E2F42;
-        padding-top: 188px;
-        padding-bottom: 188px;
-        min-width: 768px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        max-width: 768px;
         background-image: 
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/people-office\ 1-desc@1.jpg);
@@ -607,6 +611,7 @@ button {
         margin-right: auto;
         margin-bottom: 36px;
         margin-top: 0;
+        padding: 0;
     }
                 
     .button {
@@ -633,11 +638,12 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
-            .hero-section {
+    .hero-section {
         background-color: #2E2F42;
         padding-top: 188px;
-        padding-bottom: 188px;
-        /*max-width: 1440px;*/
+        padding-bottom: 188px; 
+        max-width: 1440px;
+        margin: 0 auto;
         background-image:  
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/people-office\ 1-desc@1.jpg);
@@ -656,7 +662,7 @@ button {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 48px;
-        margin-top: 0;
+        padding: 0;
     }
                 
     .button {
@@ -686,9 +692,12 @@ button {
 
             /* business strategy section */
 
-.bs-container {
+.bs-section {
     padding-top: 96px;
     padding-bottom: 96px;
+}
+
+.bs-container {
     max-width: 320px;
 }
 
@@ -719,9 +728,12 @@ button {
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
-    .bs-container {
+    .bs-section {
         padding-top: 96px;
         padding-bottom: 96px;
+    }
+
+    .bs-container {
         min-width: 768px;
     }
     
@@ -1168,7 +1180,7 @@ button {
 }
 
 .email-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     padding-top: 8px;
     padding-left: 16px;
@@ -1182,7 +1194,6 @@ button {
     letter-spacing: 0.04em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
 }
 
 .subscribe-button {
@@ -1260,6 +1271,12 @@ button {
         background-color: #2e2f42;
         line-height: 1.5;
         padding: 100px 0;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: start;
+        justify-content: start;
     }
 
     .footer-container {
@@ -1538,8 +1555,8 @@ input[type="checkbox"]:checked + .agreement-title > .checkbox-form {
 }
 
 @media screen and (min-width: 1158px) {
-    .main-footer-container {
-        max-width: 1236px;
+    .modal {
+        min-width: 408px;
     }
 
     .footer-logo {
