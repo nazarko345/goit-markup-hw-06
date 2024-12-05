@@ -1361,9 +1361,9 @@ button {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 72px; 
-    padding-right: 24px; 
+    padding-right: 16px; 
     padding-bottom: 24px; 
-    padding-left: 24px;
+    padding-left: 16px;
 }
 
 .close-button {
@@ -1551,12 +1551,16 @@ input[type="checkbox"]:checked + .agreement-title > .checkbox-form {
 @media (min-width: 768px) and (max-width: 1157px) {
     .modal {
         min-width: 408px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .modal {
         min-width: 408px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .footer-logo {
