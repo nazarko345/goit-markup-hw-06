@@ -1522,7 +1522,7 @@ button {
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked + .agreement-title > .checkbox-form {
+input[type="checkbox"]:checked + .agreement-label > .checkbox-form {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
